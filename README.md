@@ -6,9 +6,9 @@ Data-Driven Stock Analysis: Organizing, Cleaning, and Visualizing Market Trends
 🎯 Overview
 A reproducible project that extracts stock data from YAML files, transforms and normalizes it into CSVs, computes key metrics (yearly returns, volatility, cumulative returns), and exposes interactive visualizations via Streamlit and Power BI. Designed around Nifty 50 stocks for the last year, the project supports investors, analysts, and data enthusiasts.
 🔧 Skills & Tools
-Skills gained: Pandas, Python scripting, Streamlit dashboards, Power BI visualizations, SQL data loading, data cleaning, statistical metrics, plotting.
+Skills gained: Pandas, Python scripting, Streamlit dashboards, Power BI visualizations, data loading, data cleaning, statistical metrics, plotting.
 Languages / Libraries / Tools: - Python 3.8+ - Pandas, NumPy - Matplotlib, Seaborn – 
-PyYAML -- Streamlit - Power BI (for .pbix visualizations) - MySQL 
+PyYAML -- Streamlit - Power BI (for .pbix visualizations)
 🧭 Business Use Cases
 •	Top 10 green/red stocks identification (yearly)
 •	Market overview (green vs red, averages)
@@ -92,7 +92,7 @@ ________________________________________
 🧪 Testing & Validation
 •	Add unit tests for data normalization and metrics computation (suggested: tests/test_pipeline.py).
 •	Validate missing or malformed dates: pipeline uses pd.to_datetime(..., errors='coerce') and will skip invalid rows.
-•	Ensure no duplicate (Symbol, Date) rows before uploading to SQL (primary key constraint).
+•	Ensure no duplicate (Symbol, Date) rows before uploading.
 ________________________________________
 🧾 Example Commands
 •	Run the pipeline and generate plots:
@@ -126,5 +126,4 @@ ________________________________________
 Created by: Aravinth Kumar 
 Questions / feature requests → open an issue in this repository.
 ________________________________________
-
 
